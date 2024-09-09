@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Information Login/Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-signup {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .login, .signup {
+            width: 45%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        
+        .login h2, .signup h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"], input[type="date"], input[type="tel"], input[type="email"], input[type="password"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        .signup h3 {
+            margin-top: 20px;
+        }
+        
+        .hospital-id-number {
+            background-color: #ccc;
+            color: #666;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-signup">
+            <div class="login">
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"><br><br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <div class="signup">
+                <h2>Sign Up</h2>
+                <form>
+                    <h3>Patient Information</h3>
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name"><br><br>
+                    <label for="date-of-birth">Date of Birth:</label>
+                    <input type="date" id="date-of-birth" name="date-of-birth"><br><br>
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="tel" id="phone-number" name="phone-number"><br><br>
+                    <label for="email-address">Email Address:</label>
+                    <input type="email" id="email-address" name="email-address"><br><br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea><br><br>
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation"><br><br>
+                    <label for="national-id-number">National ID Number:</label>
+                    <input type="text" id="national-id-number" name="national-id-number"><br><br>
+                    <label for="insurance-details">Insurance Details (if applicable):</label>
+                    <textarea id="insurance-details" name="insurance-details"></textarea><br><br>
+                    <label for="hospital" ><br><br>
+                        <input type="submit" value="signup">
+	
